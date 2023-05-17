@@ -45,6 +45,24 @@ nav {
 }
 
 
+
+
+/* Responsive things */
+
+@media (max-width: 500px) {
+    nav {
+        padding-top: 1em;
+        flex-direction: column;
+    }
+
+    .ul_style {
+        width: 100%;
+        padding: 10px 0px;
+    }
+}
+
+
+
 /* Scroll bar styles and stuff */
 
 ::-webkit-scrollbar {
