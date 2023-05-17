@@ -17,19 +17,19 @@ nav {
     text-decoration: none;
 }
 
-ul {
-    width: 150px;
+.ul_style {
+    width: 230px;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
 }
 
-li {
+.ul_style li {
     padding: 3px;
     border-radius: 5px;
 }
 
-li:hover {
+.ul_style li:hover {
     background-color: blue;
     cursor: pointer;
 }
@@ -42,4 +42,25 @@ li:hover {
 
 .heading {
     color: rebeccapurple;
+}
+
+
+/* Scroll bar styles and stuff */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(37, 24, 125);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: #555;
 }

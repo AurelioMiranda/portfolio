@@ -4,10 +4,6 @@
 module.exports = {
   siteMetadata: {
     title: `Aurélio Miranda`,
-    description: `This is my Portfolio`,
-    twitterUsername: `@Aureliorgs`,
-    image: `../src/images/icon.png`,
-    siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
     {
@@ -15,6 +11,13 @@ module.exports = {
       options: {
         lang: `en`,
       },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
     },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
