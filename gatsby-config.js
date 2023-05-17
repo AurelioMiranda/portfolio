@@ -9,5 +9,14 @@ module.exports = {
     image: `../src/images/icon.png`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-react-helmet`,
+      options: {
+        lang: `en`,
+      },
+    },
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  ],
 }
