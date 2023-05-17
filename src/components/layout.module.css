@@ -1,0 +1,45 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2em;
+    background-color: rgb(37, 24, 125);
+}
+
+.text_style {
+    color: #e4e3e3;
+    font-family: sans-serif;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+ul {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+li {
+    padding: 3px;
+    border-radius: 5px;
+}
+
+li:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.container {
+    margin: auto;
+    max-width: 80vw;
+    font-family: sans-serif;
+}
+
+.heading {
+    color: rebeccapurple;
+}
