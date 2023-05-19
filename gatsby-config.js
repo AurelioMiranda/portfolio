@@ -6,6 +6,7 @@ module.exports = {
     title: `Aurélio Miranda`,
   },
   plugins: [
+    "gatsby-plugin-mantine",
     "gatsby-transformer-sharp",
     {
       resolve: `gatsby-plugin-react-helmet`,
