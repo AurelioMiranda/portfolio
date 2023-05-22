@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: `Aurélio Miranda`,
     description: `Personal portfolio website.`,
-    image: `icon.png`,
+    image: `src/images/icon.png`,
   },
   plugins: [
     "gatsby-plugin-mantine",
@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: `blog`,
-        path: `${__dirname}/blog`,
+        name: `portfolio`,
+        path: `${__dirname}/portfolio`,
       }
     },
     "gatsby-plugin-image",

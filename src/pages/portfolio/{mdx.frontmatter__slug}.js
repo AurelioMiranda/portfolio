@@ -4,7 +4,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 
-const BlogPost = ({ data, children }) => {
+const PortfolioPost = ({ data, children }) => {
   const image = getImage(data.mdx.frontmatter.hero_image)
 
   return (
@@ -46,4 +46,4 @@ export const query = graphql`
 
 export const Head = ({ data }) => <Seo title={data.mdx.frontmatter.title} />
 
-export default BlogPost
+export default PortfolioPost

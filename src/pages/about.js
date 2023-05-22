@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from "../components/seo"
-import { Accordion, Blockquote, Text, Title } from '@mantine/core';
+import { Blockquote, Text, Title, Timeline } from '@mantine/core';
 import '../styles/index.css'
 import '../styles/about.css'
 
@@ -73,35 +73,50 @@ const AboutPage = () => {
 
         <div className='spacing'></div>
 
-        <Title color='rebeccapurple' size="45px">Experience</Title>
+        <Title color='rebeccapurple' size="45px">Timeline</Title>
         <br />
-        <Accordion radius="xs" defaultValue="customization">
-          <Accordion.Item value="build-up-labs" className="text">
-            <Accordion.Control className='accordion-text-title'>2023 - Now &emsp;&emsp;Build Up Labs</Accordion.Control>
-            <Accordion.Panel className='accordion-text'>Currently, I am undertaking an internship as a Full Stack Developer at Build Up Labs, where
-              I work with various technologies including Gatsby, Meteor, Next.js, Mantine, MongoDB, and various cloud services.</Accordion.Panel>
-          </Accordion.Item>
+        <Title size="h3" className="text">
+          &emsp;&emsp;This is a visual representation of my professional path so far.
+        </Title>
+        <br />
+        <br />
+        <div className='timeline-container'>
+          <div className='timeline'>
+            <Timeline active={2} bulletSize={24} lineWidth={4}>
 
-          <Accordion.Item value="creative-ai" className="text">
-            <Accordion.Control className='accordion-text-title'>2023 &emsp;&emsp;&emsp;&emsp;&emsp;ILL Creative AI</Accordion.Control>
-            <Accordion.Panel>This year, I participated in an international project that brought together students from various
-              parts of Europe, including Austria, Belarus, China, and, of course, Portugal. The primary objective of this
-              project was to create a piece of art exclusively using AI. More information about this project can be found on
-              the <Link className="link" to="/blog">portfolio</Link> section.</Accordion.Panel>
-          </Accordion.Item>
+              <Timeline.Item title="&emsp;Secondary School of Sampaio">
+                <Text color="dimmed" size="sm">At this school, I was introduced to software development through projects
+                  like calculators and mini-games. Although these assignments were simple, they were enough to spark my interest
+                  and guide me towards pursuing a career in this field.</Text>
+                <Text size="xs" mt={4}>2017 - 2020</Text>
+              </Timeline.Item>
 
-          <Accordion.Item value="ips" className="text">
-            <Accordion.Control className='accordion-text-title'>2020 - Now &emsp;&emsp;Polytechnic Institute of Setúbal</Accordion.Control>
-            <Accordion.Panel>Configure components appearance and behavior with vast amount of settings or overwrite any part of component styles</Accordion.Panel>
-          </Accordion.Item>
+              <Timeline.Item title="&emsp;Polytechnic Institute of Setúbal">
+                <Text color="dimmed" size="sm">Throughout the past three years, I have dedicated myself to acquiring and refining
+                  a wide range of skills that have contributed to my current position. These skills include valuable soft skills
+                  like resilience, work ethic, and patience, as well as technical skills such as coding, debugging, testing, and
+                  project management, among others.</Text>
+                <Text size="xs" mt={4}>2020 - Now</Text>
+              </Timeline.Item>
 
-          <Accordion.Item value="sampaio" className="text">
-            <Accordion.Control className='accordion-text-title'>2017 - 2020 &emsp;&emsp;Secondary School of Sampaio</Accordion.Control>
-            <Accordion.Panel>With new :focus-visible pseudo-class focus ring appears only when user navigates with keyboard</Accordion.Panel>
-          </Accordion.Item>
-        </Accordion>
+              <Timeline.Item title="&emsp;Build Up Labs" lineVariant='dashed'>
+                <Text color="dimmed" size="sm">Currently, I am undertaking an internship as a Full Stack Developer at Build Up Labs, where
+                  I work with various technologies including Gatsby, Meteor, Next.js, Mantine, MongoDB, and various cloud services.</Text>
+                <Text size="xs" mt={4}>2023 - Now</Text>
+              </Timeline.Item>
 
-        <div className='spacing'></div>
+              <Timeline.Item title="&emsp;???">
+                <Text color="dimmed" size="sm">The future holds many unexpected things, but I have a clear vision for the next few years.
+                  As I am at the beginning of my career, I acknowledge that there is still much for me to learn. However, the most crucial
+                  aspect is being adaptable to future changes and embracing the present moment.</Text>
+                <Text size="xs" mt={4}>Future</Text>
+              </Timeline.Item>
+            </Timeline>
+          </div>
+        </div>
+
+        <br />
+        <br />
 
       </Layout>
     </main>

@@ -7,9 +7,6 @@ import { Badge, Flex, Title } from '@mantine/core';
 import '../styles/index.css'
 
 const IndexPage = () => {
-  const badgeStyles = {
-    color: 'rebeccapurple',
-  };
 
   return (
     <main>
@@ -70,8 +67,8 @@ const IndexPage = () => {
               <Badge size="lg" color="cyan">html</Badge>
               <Badge size="lg" color="teal">CSS</Badge>
             </div>
-
-            <div className='spacing'></div>
+            <br />
+            <br />
           </Flex>
 
           <StaticImage
@@ -87,9 +84,9 @@ const IndexPage = () => {
         <Title color='rebeccapurple' size="45px">More</Title>
         <br />
         <Title size="h3" className="text"> &emsp;&emsp;You can learn more about me in my <Link className='link' to="/about">about</Link> section
-          and about my projects in the <Link className='link' to="/blog">portfolio</Link> section.</Title>
+          and about my projects in the <Link className='link' to="/portfolio">portfolio</Link> section.</Title>
 
-          <div className='spacing'></div>
+        <div className='spacing'></div>
       </Layout>
     </main>
   )

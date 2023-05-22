@@ -6,7 +6,9 @@ import {
   container,
   ul_style,
   text_title,
-  text_style
+  text_style,
+  burger_menu,
+  text_style_title
 } from './layout.module.css'
 
 const Layout = ({ pageTitle, children }) => {
@@ -20,7 +22,7 @@ const Layout = ({ pageTitle, children }) => {
       }
     }
   `)
-  const [opened, { toggle }] = useDisclosure(false);
+  const [opened, { toggle }] = useDisclosure(true);
   const label = opened ? 'Close navigation' : 'Open navigation';
 
   return (
@@ -60,11 +62,11 @@ const Layout = ({ pageTitle, children }) => {
       <div>
         <nav>
           <Flex justify="space-between" align="center">
-            <Link className={text_style} to="/">
+            <Link className={text_style_title} to="/">
               <span className={text_title}>{data.site.siteMetadata.title.split(' ')[0]}.</span>
             </Link>
             
-            <Paper radius="xl" p="xs" withBorder>
+            <Paper radius="xl" p="xs" withBorder className={burger_menu}>
               <Burger opened={opened} size="md"
                 onClick={toggle} aria-label={label} />
             </Paper>
@@ -82,7 +84,7 @@ const Layout = ({ pageTitle, children }) => {
                       About
                     </Link></li>
                   <li>
-                    <Link className={text_style} to="/blog">
+                    <Link className={text_style} to="/portfolio">
                       Portfolio
                     </Link></li>
                 </ul>

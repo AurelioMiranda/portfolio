@@ -29,3 +29,27 @@
     border-radius: 8px;
     color: grey;
 }
+
+.timeline-container {
+    display: flex;
+    justify-content: center;
+}
+
+.timeline {
+    width: 55%;
+    font-size: larger;
+}
+
+@media (max-width: 500px) {
+    .where-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .text-container {
+        width: 100%;
+    }
+    .timeline {
+        width: 90%;
+        font-size: larger;
+    }
+}
