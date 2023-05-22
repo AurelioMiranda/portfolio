@@ -1,4 +1,8 @@
 
+hr {
+    border-color: rgb(26,27,30);
+    border-color: radial-gradient(circle, rgba(26,27,30,1) 0%, rgba(85,85,85,1) 100%);
+}
 
 .heading {
     color: rebeccapurple;
@@ -19,7 +23,17 @@
     margin: 0.2em;
 }
 
+.spacing {
+    height: 7em;
+}
 
+.text {
+    margin: 0em 1em;
+}
+
+.link:hover {
+    color: rebeccapurple;
+}
 
 @media (max-width: 750px) {
     .heading {

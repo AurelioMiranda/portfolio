@@ -1,0 +1,31 @@
+
+.blockquote {
+    display: flex;
+    justify-content: center;
+}
+
+.blockquote * {
+    font-size: 25px;
+}
+
+.where-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text-container {
+    width: 60%;
+}
+
+.image-caption-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.image-caption-container * {
+    border-radius: 8px;
+    color: grey;
+}

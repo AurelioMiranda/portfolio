@@ -4,6 +4,8 @@
 module.exports = {
   siteMetadata: {
     title: `Aurélio Miranda`,
+    description: `Personal portfolio website.`,
+    image: `icon.png`,
   },
   plugins: [
     "gatsby-plugin-mantine",

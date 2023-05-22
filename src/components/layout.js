@@ -60,7 +60,10 @@ const Layout = ({ pageTitle, children }) => {
       <div>
         <nav>
           <Flex justify="space-between" align="center">
-            <span className={text_title}>{data.site.siteMetadata.title.split(' ')[0]}.</span>
+            <Link className={text_style} to="/">
+              <span className={text_title}>{data.site.siteMetadata.title.split(' ')[0]}.</span>
+            </Link>
+            
             <Paper radius="xl" p="xs" withBorder>
               <Burger opened={opened} size="md"
                 onClick={toggle} aria-label={label} />
@@ -80,7 +83,7 @@ const Layout = ({ pageTitle, children }) => {
                     </Link></li>
                   <li>
                     <Link className={text_style} to="/blog">
-                      Blog
+                      Portfolio
                     </Link></li>
                 </ul>
               </div>}
@@ -102,24 +105,24 @@ const Layout = ({ pageTitle, children }) => {
         </p>
         <div>
           <a href="https://www.instagram.com/l_aurelio_l/" target="_blank" rel="noopener noreferrer">
-            <Image maw={240} width="25"
-            src="https://www.iconpacks.net/icons/2/free-instagram-logo-icon-3497-thumb.png" 
-            alt="Instagram" />
+            <Image maw={240} width="25" height="25"
+              src="https://www.iconpacks.net/icons/2/free-instagram-logo-icon-3497-thumb.png"
+              alt="Instagram" />
           </a>
-          <a href="https://www.linkedin.com/in/aurelio-miranda-gaboleiro/" target="_blank" rel="noopener noreferrer">
-            <Image maw={240} width="25"
-            src="https://cdn-icons-png.flaticon.com/512/61/61109.png" 
-            alt="LinkedIn" />
+          <a href="https://www.linkedin.com/in/mirandex/" target="_blank" rel="noopener noreferrer">
+            <Image maw={240} width="25" height="25"
+              src="https://cdn-icons-png.flaticon.com/512/61/61109.png"
+              alt="LinkedIn" />
           </a>
           <a href="https://www.facebook.com/profile.php?id=100008999912309" target="_blank" rel="noopener noreferrer">
-            <Image maw={240} width="25"
-            src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Facebook%2BIcon%2BBlack.png" 
-            alt="Facebook" />
+            <Image maw={240} width="25" height="25"
+              src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Facebook%2BIcon%2BBlack.png"
+              alt="Facebook" />
           </a>
           <a href="mailto:aureliogaboleiro49@gmail.com">
-            <Image maw={240} width="25"
-            src="https://www.pngmart.com/files/15/Email-Symbol-PNG-Transparent.png" 
-            alt="Email" />
+            <Image maw={240} width="25" height="auto"
+              src="https://www.pngmart.com/files/15/Email-Symbol-PNG-Transparent.png"
+              alt="Email" />
           </a>
         </div>
       </footer>
