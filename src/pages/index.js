@@ -3,11 +3,7 @@ import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from "../components/seo"
 import { Badge, Flex, Title } from '@mantine/core';
-import {
-  heading,
-  top_container_ps,
-  ps_container
-} from '../Components/layout.module.css'
+import '../styles/index.css'
 
 const IndexPage = () => {
   const badgeStyles = {
@@ -21,7 +17,7 @@ const IndexPage = () => {
         <br />
         <br />
         <Flex align="center" justify="space-between">
-          <h1 className={heading}>
+          <h1 className="heading">
             Hi! I'm
             <br />
             Aurélio Miranda,
@@ -49,11 +45,11 @@ const IndexPage = () => {
         <br />
         <br />
 
-        <div className={top_container_ps}>
+        <div className="top_container_ps">
           <Flex direction="column" justify="flex-end">
             <Title color='rebeccapurple'>Core Programming Skills:</Title>
             <br/>
-            <div className={ps_container}>
+            <div className="ps_container">
               <Badge size="lg" color="orange">C#</Badge>
               <Badge size="lg" color="red">Java</Badge>
               <Badge size="lg" color="green">JavaScript</Badge>

@@ -53,20 +53,6 @@ nav {
     font-size: 4em;
 }
 
-.top_container_ps {
-    display: flex;
-    justify-content: space-between;
-}
-
-.ps_container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.ps_container * {
-    margin: 0.2em;
-}
-
 footer {
     padding: 30px;
     background: #252525;
@@ -96,13 +82,6 @@ footer div a:hover {
 @media (max-width: 750px) {
     .heading {
         font-size: 2.5em;
-    }
-}
-
-@media (max-width: 654px) {
-    .top_container_ps {
-        flex-direction: column-reverse;
-        row-gap: 30px;
     }
 }
 
