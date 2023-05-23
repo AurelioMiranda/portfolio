@@ -40,7 +40,7 @@
     font-size: larger;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 850px) {
     .where-container {
         flex-direction: column;
         gap: 1em;

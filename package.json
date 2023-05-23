@@ -22,6 +22,7 @@
     "@mantine/hooks": "^6.0.11",
     "@mantine/prism": "^6.0.11",
     "@mdx-js/react": "^2.3.0",
+    "@tabler/icons-react": "^2.20.0",
     "embla-carousel-react": "^7.1.0",
     "gatsby": "^5.9.1",
     "gatsby-plugin-image": "^3.10.0",

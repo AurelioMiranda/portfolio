@@ -87,6 +87,10 @@ const Layout = ({ pageTitle, children }) => {
                     <Link className={text_style} to="/portfolio">
                       Portfolio
                     </Link></li>
+                  <li>
+                    <Link className={text_style} to="/contact">
+                      Contact Me
+                    </Link></li>
                 </ul>
               </div>}
             </Transition>
