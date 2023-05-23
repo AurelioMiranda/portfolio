@@ -1,7 +1,5 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import { StaticImage } from 'gatsby-plugin-image'
 import Seo from "../components/seo"
 import { Button, Textarea, Autocomplete, Title } from '@mantine/core';
 import { Input } from '@mantine/core';
@@ -50,6 +48,7 @@ const ContactMePage = () => {
 
           <Textarea
             type="message"
+            name="message"
             id="message"
             icon={<IconWriting />}
             placeholder="Your message"
@@ -58,7 +57,9 @@ const ContactMePage = () => {
             className='input'
           />
 
-          <button type="submit">Send</button>
+          <Button variant="default" type='submit'>
+              Send
+            </Button>
         </form>
         <br />
         <br />

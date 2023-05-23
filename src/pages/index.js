@@ -73,7 +73,7 @@ const IndexPage = () => {
 
           <StaticImage
             alt="Visual description of a software development process."
-            src="..\images\development.png"
+            src="..\..\src\images\development.png"
             width="400"
             height="400"
           />
