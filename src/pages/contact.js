@@ -23,9 +23,12 @@ const ContactMePage = () => {
         <br />
         <br />
 
-        <form method="post" action="#" className='form-container'>
+        <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" className='form-container'>
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
 
           <Input
+            type="email"
             icon={<IconAt />}
             placeholder="Your email"
             size="md"
@@ -48,7 +51,7 @@ const ContactMePage = () => {
             className='input'
           />
 
-          <Button variant="default">
+          <Button variant="default" type="submit">
             Send
           </Button>
         </form>
