@@ -60,7 +60,7 @@ const IndexPage = () => {
               <Badge size="lg" color="orange">C#</Badge>
               <Badge size="lg" color="red">Java</Badge>
               <Badge size="lg" color="green">JavaScript</Badge>
-              <Badge size="lg" color="gray">asp .net</Badge>
+              <Badge size="lg" color="gray">asp .net core</Badge>
               <Badge size="lg" color="pink">React</Badge>
               <Badge size="lg" color="grape">Python</Badge>
               <Badge size="lg">Unity</Badge>

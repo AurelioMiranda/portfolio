@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import { Badge, Title } from '@mantine/core';
+import { Badge, Title, Text } from '@mantine/core';
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 import '../../styles/index.css'
@@ -15,7 +15,6 @@ const PortfolioPage = ({ data }) => {
       <br />
       <br />
       <Title color='rebeccapurple' size="45px">My projects</Title>
-      <br />
 
       <div className='all-nodes'>
         {
@@ -28,7 +27,12 @@ const PortfolioPage = ({ data }) => {
                   </h2>
                   <h2>{node.frontmatter.date}</h2>
                 </div>
-                <p>{node.excerpt}</p>
+                <div className='statements'>
+                  &emsp;&emsp;{node.frontmatter.statement_1}
+                  <br />
+                  <br />
+                  &emsp;&emsp;{node.frontmatter.statement_2}
+                </div>
                 <div className='badges'>
                   <Badge color="green">{node.frontmatter.language_1}</Badge>
                   {node.frontmatter.language_2 !== "" && <Badge color="green">{node.frontmatter.language_2}</Badge>}
@@ -36,6 +40,7 @@ const PortfolioPage = ({ data }) => {
                   {node.frontmatter.methodology_1 !== "" && <Badge color="red">{node.frontmatter.methodology_1}</Badge>}
                   {node.frontmatter.methodology_2 !== "" && <Badge color="red">{node.frontmatter.methodology_2}</Badge>}
                   <Badge color="gray">{node.frontmatter.technology_1}</Badge>
+                  {node.frontmatter.technology_2 !== "" && <Badge color="gray">{node.frontmatter.technology_2}</Badge>}
                 </div>
               </div>
               <div className='image-container'>
@@ -73,9 +78,11 @@ export const query = graphql`
           language_2
           language_3
           technology_1
+          technology_2
           methodology_1
           methodology_2
-          content
+          statement_1
+          statement_2
         }
         id
         excerpt

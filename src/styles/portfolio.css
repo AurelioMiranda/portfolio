@@ -37,9 +37,13 @@
     width: 43%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px;
     margin: 30px 5px;
+}
+
+.statements {
+    margin: 2em 0em;
 }
 
 .title {
