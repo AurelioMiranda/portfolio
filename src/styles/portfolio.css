@@ -1,4 +1,3 @@
-
 .all-nodes {
     display: flex;
     flex-direction: column;
@@ -72,4 +71,22 @@
     justify-content: center;
     color: rgb(150, 149, 149);
     margin-top: 10px;
+}
+
+@media (max-width: 950px) {
+    .all-nodes article {
+        flex-direction: column;
+    }
+
+    .all-nodes article:nth-child(2n) {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .article-container {
+        width: 100%;
+    }
 }
