@@ -28,8 +28,8 @@ const ContactMePage = () => {
           <input type="hidden" name="form-name" value="contact" />
 
           <Input
-            type="email" 
-            name="email" 
+            type="email"
+            name="email"
             id="email"
             icon={<IconAt />}
             placeholder="Your email"
@@ -38,8 +38,8 @@ const ContactMePage = () => {
           />
 
           <Autocomplete
-            type="text" 
-            name="subject" 
+            type="text"
+            name="subject"
             id="subject"
             icon={<IconAlertTriangle />}
             placeholder="Subject"
@@ -49,10 +49,10 @@ const ContactMePage = () => {
           />
 
           <Textarea
-            type="message" 
+            type="message"
             id="message"
             icon={<IconWriting />}
-            placeholder="Your text"
+            placeholder="Your message"
             withAsterisk
             size="md"
             className='input'
