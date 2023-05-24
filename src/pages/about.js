@@ -82,13 +82,19 @@ const AboutPage = () => {
         <br />
         <div className='timeline-container'>
           <div className='timeline'>
-            <Timeline active={2} bulletSize={24} lineWidth={4}>
+            <Timeline active={2} bulletSize={24} lineWidth={4} reverseActive>
 
-              <Timeline.Item title="&emsp;Secondary School of Sampaio">
-                <Text color="dimmed" size="sm">At this school, I was introduced to software development through projects
-                  like calculators and mini-games. Although these assignments were simple, they were enough to spark my interest
-                  and guide me towards pursuing a career in this field.</Text>
-                <Text size="xs" mt={4}>2017 - 2020</Text>
+              <Timeline.Item title="&emsp;Let's talk!" lineVariant='dashed'>
+                <Text color="dimmed" size="sm">The future holds many unexpected things like your visit to this website, now that you are
+                  here, let's get in touch! Message me in one of my socials down below or <Link
+                    className="link" to="/contact">send me a message</Link>!</Text>
+                <Text size="xs" mt={4}>Now</Text>
+              </Timeline.Item>
+
+              <Timeline.Item title="&emsp;Build Up Labs">
+                <Text color="dimmed" size="sm">Currently, I am undertaking an internship as a Full Stack Developer at Build Up Labs, where
+                  I work with various technologies including Gatsby, Meteor, Next.js, Mantine, MongoDB, and various cloud services.</Text>
+                <Text size="xs" mt={4}>2023 - Now</Text>
               </Timeline.Item>
 
               <Timeline.Item title="&emsp;Polytechnic Institute of Setúbal">
@@ -99,17 +105,11 @@ const AboutPage = () => {
                 <Text size="xs" mt={4}>2020 - Now</Text>
               </Timeline.Item>
 
-              <Timeline.Item title="&emsp;Build Up Labs" lineVariant='dashed'>
-                <Text color="dimmed" size="sm">Currently, I am undertaking an internship as a Full Stack Developer at Build Up Labs, where
-                  I work with various technologies including Gatsby, Meteor, Next.js, Mantine, MongoDB, and various cloud services.</Text>
-                <Text size="xs" mt={4}>2023 - Now</Text>
-              </Timeline.Item>
-
-              <Timeline.Item title="&emsp;???">
-                <Text color="dimmed" size="sm">The future holds many unexpected things, but I have a clear vision for the next few years.
-                  As I am at the beginning of my career, I acknowledge that there is still much for me to learn. However, the most crucial
-                  aspect is being adaptable to future changes and embracing the present moment.</Text>
-                <Text size="xs" mt={4}>Future</Text>
+              <Timeline.Item title="&emsp;Secondary School of Sampaio">
+                <Text color="dimmed" size="sm">At this school, I was introduced to software development through projects
+                  like calculators and mini-games. Although these assignments were simple, they were enough to spark my interest
+                  and guide me towards pursuing a career in this field.</Text>
+                <Text size="xs" mt={4}>2017 - 2020</Text>
               </Timeline.Item>
             </Timeline>
           </div>
