@@ -3,88 +3,115 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from "../components/seo"
-import { Badge, Flex, Title } from '@mantine/core';
+import { Flex, Title, Text, Button, Divider } from '@mantine/core'
 import '../styles/index.css'
 
 const IndexPage = () => {
-
   return (
     <main>
       <Layout pageTitle="Aurélio Miranda">
 
         <div className='spacing'></div>
 
-        <Flex align="center" justify="space-between">
-          <h1 className="heading">
-            Hi! I'm
-            <br />
-            Aurélio Miranda,
-            <br />
-            FullStack Developer</h1>
+        <Flex align="center" justify="space-between" direction={{ base: "column", sm: "row" }}>
+          <div>
+            <h1 className="heading">
+              Hi! I'm
+              <br />
+              <span className="highlight">Aurélio Miranda</span>,
+              <br />
+              Full-Stack Developer
+            </h1>
+            <Text size="lg" color="dimmed">
+              Passionate about creating efficient, scalable, and visually appealing solutions
+              for the web and beyond.
+            </Text>
+            <Button
+              component={Link}
+              to="/portfolio"
+              size="lg"
+              variant="gradient"
+              gradient={{ from: "indigo", to: "cyan" }}
+              style={{ marginTop: "1rem" }}
+            >
+              Explore My Work
+            </Button>
+          </div>
 
           <StaticImage
             alt="Personal picture"
             src="../images/placeholder.png"
             width="500"
             height="500"
-            style={{ transform: 'scaleX(-1)' }}
+            style={{ transform: 'scaleX(-1)', borderRadius: '50%' }}
           />
         </Flex>
 
         <div className='spacing'></div>
 
-        <hr />
+        <Divider my="lg" />
 
         <div className='spacing'></div>
 
         <Title color='rebeccapurple' size="45px">Welcome!</Title>
-        <br />
-        <Title size="h3" className="text"> &emsp;&emsp;Welcome to my personal portfolio, a comprehensive showcase of my skills,
-          projects, and notable achievements as a Software Engineer. As you
-          navigate through my portfolio, you'll gain insights into my expertise and
-          the depth of my capabilities.</Title>
+        <Text size="lg" className="text" mt="md">
+          Welcome to my personal portfolio—a showcase of my journey as a Software Engineer. Here, you'll find
+          a curated collection of my projects, achievements, and skills that define my professional expertise.
+        </Text>
 
         <div className='spacing'></div>
 
-        <Title color='rebeccapurple' size="45px">My skills</Title>
+        <Title color="rebeccapurple" size="45px">My Skills</Title>
         <br />
-        <Title size="h3" className="text"> &emsp;&emsp;Over the course of my professional journey, I have diligently acquired
+        <Title size="h3" className="text">
+          &emsp;&emsp;Over the course of my professional journey, I have diligently acquired
           and cultivated a diverse range of invaluable skills that have rendered me a proficient
-          and accomplished software developer. Some of those skills are listed below. 👇</Title>
+          and accomplished software developer. Some of those skills are listed below. 👇
+        </Title>
         <br />
-        <div className="top_container_ps">
-          <Flex direction="column" justify="flex-end">
-            <Title color='rebeccapurple'>Core Programming Skills:</Title>
-            <br />
-            <div className="ps_container">
-              <Badge size="lg" color="orange">C#</Badge>
-              <Badge size="lg" color="red">Java</Badge>
-              <Badge size="lg" color="green">JavaScript</Badge>
-              <Badge size="lg" color="gray">asp .net core</Badge>
-              <Badge size="lg" color="pink">React</Badge>
-              <Badge size="lg" color="grape">Python</Badge>
-              <Badge size="lg">Unity</Badge>
-              <Badge size="lg" color="cyan">html</Badge>
-              <Badge size="lg" color="teal">CSS</Badge>
+        <div className="skills-section">
+          <div className="skills-card">
+            <h3>Core Programming Skills</h3>
+            <p>C#</p>
+            <p>Java</p>
+            <p>JavaScript/TypeScript</p>
+            <p>Python</p>
+          </div>
+          <div className="skills-card">
+            <h3>Front-End Development</h3>
+            <p>Next.js</p>
+            <p>React</p>
+            <p>MaterialUI</p>
+            <p>MantineUI</p>
+          </div>
+          <div className="skills-card">
+            <h3>Back-End Development</h3>
+            <p>Node.js (Express.js)</p>
+            <p>Firebase</p>
+            <p>MongoDB</p>
+            <p>PostgreSQL</p>
+          </div>
+          <div className="skills-card">
+            <h3>DevOps</h3>
+            <div>
+              <p>Docker</p>
+              <p>Kubernetes</p>
             </div>
-            <br />
-            <br />
-          </Flex>
-
-          <StaticImage
-            alt="Visual description of a software development process."
-            src="..\..\src\images\development.png"
-            width="400"
-            height="400"
-          />
+          </div>
+          <div className="skills-card">
+            <h3>Cloud</h3>
+            <p>Vercel</p>
+            <p>Azure (Cosmos DB, Blob Storage)</p>
+            <p>Netlify</p>
+          </div>
         </div>
 
         <div className='spacing'></div>
 
-        <Title color='rebeccapurple' size="45px">More</Title>
-        <br />
-        <Title size="h3" className="text"> &emsp;&emsp;You can learn more about me in my <Link className='link' to="/about">about</Link> section
-          and about my projects in the <Link className='link' to="/portfolio">portfolio</Link> section.</Title>
+        <Title color='rebeccapurple' size="45px">Learn More</Title>
+        <Text size="lg" className="text" mt="md">
+          Discover more about me in the <Link className='link' to="/about">About</Link> section or explore my projects in the <Link className='link' to="/portfolio">Portfolio</Link> section.
+        </Text>
 
         <div className='spacing'></div>
       </Layout>
@@ -94,6 +121,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => (
-  <Seo />
-)
+export const Head = () => <Seo />

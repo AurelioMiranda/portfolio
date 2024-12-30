@@ -1,6 +1,6 @@
-import * as React from 'react'
-import Layout from '../components/layout'
-import Seo from "../components/seo"
+import * as React from 'react';
+import Layout from '../components/layout';
+import Seo from "../components/seo";
 import { Button, Textarea, Autocomplete, Title } from '@mantine/core';
 import { Input } from '@mantine/core';
 import { IconAt, IconAlertTriangle, IconWriting } from '@tabler/icons-react';
@@ -12,13 +12,15 @@ const ContactMePage = () => {
   return (
     <main>
       <Layout pageTitle="Aurélio Miranda">
+        <div className="contact-header">
+          <Title color="rebeccapurple" size="45px">Contact Me</Title>
+          <p className="contact-subtitle">I'd love to hear from you! Please fill out the form below to get in touch.</p>
+        </div>
 
-        <br />
-        <br />
         <br />
 
         <Title color='rebeccapurple' size="45px">Contact me via the form below!</Title>
-        <br />
+
         <br />
 
         <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" className='form-container'>
@@ -58,11 +60,13 @@ const ContactMePage = () => {
           />
 
           <Button variant="default" type='submit'>
-              Send
-            </Button>
+            Send
+          </Button>
         </form>
-        <br />
-        <br />
+
+        <div className="linkedin-cta">
+          <p>If you want a faster response, feel free to message me on <a href="https://www.linkedin.com/in/mirandex/" target="_blank" rel="noopener noreferrer">LinkedIn</a>!</p>
+        </div>
       </Layout>
     </main>
   )

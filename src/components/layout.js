@@ -32,10 +32,8 @@ const Layout = ({ pageTitle, children }) => {
       theme={{
         colorScheme: 'dark',
         colors: {
-          // Add your color
-          deepBlue: ['#E9EDFC', '#C1CCF6', '#99ABF0' /* ... */],
-          // or replace default theme color
-          blue: ['#E9EDFC', '#C1CCF6', '#99ABF0' /* ... */],
+          deepBlue: ['#E9EDFC', '#C1CCF6', '#99ABF0'],
+          blue: ['#E9EDFC', '#C1CCF6', '#99ABF0'],
         },
 
         shadows: {
@@ -51,7 +49,6 @@ const Layout = ({ pageTitle, children }) => {
         },
         components: {
           Badge: {
-            // Use raw styles object if you do not need theme dependency
             styles: {
               root: { borderWidth: '0.125rem' },
             },

@@ -1,3 +1,7 @@
+.contact-header {
+    margin-top: 20px;
+}
+
 .form-container {
     display: flex;
     flex-direction: column;

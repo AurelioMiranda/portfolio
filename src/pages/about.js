@@ -82,7 +82,7 @@ const AboutPage = () => {
         <br />
         <div className='timeline-container'>
           <div className='timeline'>
-            <Timeline active={2} bulletSize={24} lineWidth={4} reverseActive>
+            <Timeline active={3} bulletSize={24} lineWidth={4} reverseActive>
 
               <Timeline.Item title="&emsp;Let's talk!" lineVariant='dashed'>
                 <Text color="dimmed" size="sm">The future holds many unexpected things like your visit to this website, now that you are
@@ -91,10 +91,16 @@ const AboutPage = () => {
                 <Text size="xs" mt={4}>Now</Text>
               </Timeline.Item>
 
-              <Timeline.Item title="&emsp;Build Up Labs">
-                <Text color="dimmed" size="sm">Currently, I am undertaking an internship as a Full Stack Developer at Build Up Labs, where
-                  I work with various technologies including Gatsby, Meteor, Next.js, Mantine, MongoDB, and various cloud services.</Text>
+              <Timeline.Item title="&emsp;FCT Nova">
+                <Text color="dimmed" size="sm">Currently, I am finishing my masters degree in computer science and engineering at FCT Nova
+                  where I work with many technologies ranging from AI machine learning to cloud, frontend, backend and devops.</Text>
                 <Text size="xs" mt={4}>2023 - Now</Text>
+              </Timeline.Item>
+
+              <Timeline.Item title="&emsp;Build Up Labs">
+                <Text color="dimmed" size="sm">I completed an internship as a Full Stack Developer at Build Up Labs, where
+                  I worked with various technologies including Gatsby, Meteor, Next.js, Mantine, MongoDB, and various cloud services.</Text>
+                <Text size="xs" mt={4}>2023 - 2023</Text>
               </Timeline.Item>
 
               <Timeline.Item title="&emsp;Polytechnic Institute of Setúbal">
@@ -102,7 +108,7 @@ const AboutPage = () => {
                   a wide range of skills that have contributed to my current position. These skills include valuable soft skills
                   like resilience, work ethic, and patience, as well as technical skills such as coding, debugging, testing, and
                   project management, among others.</Text>
-                <Text size="xs" mt={4}>2020 - Now</Text>
+                <Text size="xs" mt={4}>2020 - 2023</Text>
               </Timeline.Item>
 
               <Timeline.Item title="&emsp;Secondary School of Sampaio">
@@ -114,17 +120,12 @@ const AboutPage = () => {
             </Timeline>
           </div>
         </div>
-
-        <br />
-        <br />
-
       </Layout>
     </main>
   )
 }
 
 
-// Step 3: Export your component
 export default AboutPage
 
 export const Head = () => (
