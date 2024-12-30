@@ -1,49 +1,34 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
+# **Aurélio Miranda's Portfolio**
 
-## 🚀 Quick start
+Welcome to my portfolio! I'm **Aurélio Miranda**, a passionate **Full-Stack Software Developer** with a focus on **front-end development**. Here you'll find my personal projects, professional work, and insights into my development journey.
 
-1.  **Create a Gatsby site.**
+---
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## **About Me**
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+I am currently pursuing my Master's degree in **Computer Science** at the **FCT Nova**, and I'm in my final year. My expertise spans various technologies, including **C#**, **React**, **Next.js**, **Java**, and **Cloud Computing**.
 
-2.  **Start developing.**
+Throughout my journey, I've had the opportunity to work with cutting-edge technologies and contribute to projects that involve **AI**, **Machine Learning**, **Agile Methodologies**, and **Cloud Solutions**. I thrive in dynamic environments where I can solve complex problems and learn new skills.
 
-    Navigate into your new site’s directory and start it up.
+---
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## **Key Skills**
 
-3.  **Open the code and start customizing!**
+- **Programming Languages**: C#, JavaScript, Python, Java
+- **Frameworks & Libraries**: React, Next.js, Gatsby, Node.js, Mantine
+- **Databases**: MongoDB, PostgreSQL, Cosmos DB, Firebase
+- **Cloud Platforms**: Azure, Firebase
+- **Tools & DevOps**: Git, Docker, Kubernetes, Redis
+- **Other**: RESTful APIs, Agile Methodologies, UI/UX Design, Testing
 
-    Your site is now running at http://localhost:8000!
+---
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+### Check out my **[Personal Portfolio](https://aurelio-miranda.netlify.app/)**.  
+---
 
-4.  **Learn more**
+## **Future Goals**
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- Continue expanding my knowledge in **AI** and **Cloud Computing**.
+- Contribute to open-source projects and collaborate with other developers.
+- Build more innovative applications that solve real-world problems.
 
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
