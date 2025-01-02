@@ -1,3 +1,18 @@
+.filter {
+    display: flex;
+    justify-content: center;
+}
+
+.inside-filter {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.inside-filter div button div span {
+    font-weight: bold;
+}
+
 .all-nodes {
     display: flex;
     flex-direction: column;
@@ -13,6 +28,8 @@
     border-bottom: 1px solid grey;
     padding: 30px 10px;
     margin: 30px 0px;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .all-nodes article:nth-child(2n) {
