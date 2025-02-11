@@ -138,6 +138,7 @@ const PortfolioPage = ({ data }) => {
                 {node.frontmatter.methodology_2 && <Badge color="red">{node.frontmatter.methodology_2}</Badge>}
                 <Badge color="gray">{node.frontmatter.technology_1}</Badge>
                 {node.frontmatter.technology_2 && <Badge color="gray">{node.frontmatter.technology_2}</Badge>}
+                {node.frontmatter.type && <Badge color="cyan">{node.frontmatter.type}</Badge>}
               </div>
             </div>
             <div className='image-container'>
@@ -178,6 +179,7 @@ export const query = graphql`
           technology_2
           methodology_1
           methodology_2
+          type
           statement_1
           statement_2
           link
