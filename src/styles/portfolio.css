@@ -59,7 +59,9 @@
 }
 
 .statements {
-    margin: 2em 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 }
 
 .title {

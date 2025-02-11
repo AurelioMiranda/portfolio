@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import { Accordion , Badge, Title, Button, Group } from '@mantine/core';
+import { Accordion, Badge, Title, Button, Group } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
@@ -123,6 +123,12 @@ const PortfolioPage = ({ data }) => {
                 <br />
                 <br />
                 &emsp;&emsp;{node.frontmatter.statement_2}
+                {node.frontmatter.link &&
+                  <>
+                    <br />
+                    &emsp;&emsp;
+                    <span>Check out {node.frontmatter.title} <a href={node.frontmatter.link} target="_blank" rel="noreferrer">here</a>.</span>
+                  </>}
               </div>
               <div className='badges'>
                 <Badge color="green">{node.frontmatter.language_1}</Badge>
@@ -174,6 +180,7 @@ export const query = graphql`
           methodology_2
           statement_1
           statement_2
+          link
         }
         id
         excerpt
