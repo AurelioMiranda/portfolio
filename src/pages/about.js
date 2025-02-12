@@ -16,8 +16,8 @@ const AboutPage = () => {
 
         <div className='blockquote'>
 
-          <Blockquote cite="– Unknown">
-            Success is my mission, I grind with precision, no limits, no ceilings, I rise with ambition.
+          <Blockquote cite="– Marcus Aurelius">
+            The impediment to action advances action. What stands in the way becomes the way.
           </Blockquote>
         </div>
 
@@ -27,8 +27,8 @@ const AboutPage = () => {
         <br />
         <Title size="h3" className="text">&emsp;&emsp;I am a software developer specialized
           in full-stack development, with a slight inclination towards front-end development.
-          Currently, I am in the final year of my Bachelor's degree at <Link
-            className="link" to="https://www.ips.pt/ips_si/web_page.inicial">IPS</Link>.
+          Currently, I am in the final year of my Masters's degree at <Link
+            className="link" to="https://www.fct.unl.pt/">FCT Nova</Link>.
         </Title>
         <br />
         <Title size="h3" className="text">
@@ -49,7 +49,7 @@ const AboutPage = () => {
               src="../images/pt.png"
               width="30"
               height="30"
-            />. Additionally, I work in the vibrant city of Lisbon and pursue my studies in Setúbal.
+            />. Additionally, I work in the vibrant city of Lisbon and pursue my studies at Costa da Caparica.
             </Title>
             <br />
             <Title size="h3" className="text">
