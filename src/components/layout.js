@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import { MantineProvider, Burger, Transition, Paper, Flex, Image } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
+import { useEffect } from 'react';
 import {
   container,
   ul_style,
@@ -22,8 +23,15 @@ const Layout = ({ pageTitle, children }) => {
       }
     }
   `)
-  const [opened, { toggle }] = useDisclosure(true);
+  const [opened, { toggle, close }] = useDisclosure(true);
   const label = opened ? 'Close navigation' : 'Open navigation';
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      close();
+    }
+  }, []);
+
 
   return (
     <MantineProvider
@@ -62,7 +70,7 @@ const Layout = ({ pageTitle, children }) => {
             <Link className={text_style_title} to="/">
               <span className={text_title}>{data.site.siteMetadata.title.split(' ')[0]}.</span>
             </Link>
-            
+
             <Paper radius="xl" p="xs" withBorder className={burger_menu}>
               <Burger opened={opened} size="md"
                 onClick={toggle} aria-label={label} />

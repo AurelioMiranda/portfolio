@@ -13,6 +13,14 @@
     font-weight: bold;
 }
 
+.star-switch {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
 .all-nodes {
     display: flex;
     flex-direction: column;
@@ -113,5 +121,10 @@
 
     .article-container {
         width: 100%;
+    }
+
+    .star-switch {
+        width: 100%;
+        justify-content: center;
     }
 }

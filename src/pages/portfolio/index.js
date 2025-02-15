@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import { Accordion, Badge, Title, Button, Group } from '@mantine/core';
+import { Accordion, Badge, Title, Button, Group, Switch, Tooltip } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
@@ -10,7 +10,10 @@ import '../../styles/portfolio.css'
 
 const PortfolioPage = ({ data }) => {
   const [filter, setFilter] = React.useState('All');
+  const [starFilter, setStarFilter] = React.useState(false);
   const isMobile = useMediaQuery('(max-width: 768px)');
+
+  const starProjects = ["surd", "nautigo", "creativeai"];
 
   const languages = Array.from(
     new Set(
@@ -22,11 +25,34 @@ const PortfolioPage = ({ data }) => {
     )
   );
 
-  const filteredProjects = filter === 'All'
-    ? data.allMdx.nodes
-    : data.allMdx.nodes.filter(node =>
-      [node.frontmatter.language_1, node.frontmatter.language_2, node.frontmatter.language_3].includes(filter)
+  const filteredProjects = starFilter
+    ? data.allMdx.nodes.filter(node => starProjects.includes(node.frontmatter.slug))
+    : (filter === 'All'
+      ? data.allMdx.nodes
+      : data.allMdx.nodes.filter(node =>
+        [node.frontmatter.language_1, node.frontmatter.language_2, node.frontmatter.language_3].includes(filter)
+      )
     );
+
+  const handleStarToggle = () => {
+    setStarFilter(prev => !prev);
+    if (!starFilter) {
+      setFilter('All');
+    }
+  };
+
+  const reorderedProjects = [...filteredProjects];
+  if (reorderedProjects.length > 1) {
+    const surdIndex = reorderedProjects.findIndex(p => p.frontmatter.slug === "surd");
+    const antipodeIndex = reorderedProjects.findIndex(p => p.frontmatter.slug === "antipodeexplorer");
+
+    if (surdIndex >= 0 && antipodeIndex >= 0) {
+      if (surdIndex > antipodeIndex) {
+        [reorderedProjects[surdIndex], reorderedProjects[antipodeIndex]] =
+          [reorderedProjects[antipodeIndex], reorderedProjects[surdIndex]];
+      }
+    }
+  }
 
   return (
     <Layout pageTitle="My Portfolio Posts">
@@ -37,7 +63,7 @@ const PortfolioPage = ({ data }) => {
         // Mobile
         <Accordion>
           <Accordion.Item value="filter">
-            <Accordion.Control>Filter by Language</Accordion.Control>
+            <Accordion.Control>Filters</Accordion.Control>
             <Accordion.Panel>
               <Group direction="column" spacing="sm" style={{ marginBottom: '20px' }}>
                 <Button
@@ -69,6 +95,28 @@ const PortfolioPage = ({ data }) => {
                     {language}
                   </Button>
                 ))}
+              </Group>
+            </Accordion.Panel>
+            <Accordion.Panel>
+              <Group direction="column" spacing="sm" style={{ marginBottom: '20px' }}>
+                <span className='star-switch'>
+                  <Tooltip label="My most relevant projects" withinPortal>
+                    <div>
+                      <Switch
+                        color="indigo"
+                        labelPosition="left"
+                        label="Star projects"
+                        checked={starFilter}
+                        onChange={handleStarToggle}
+                        styles={(theme) => ({
+                          label: {
+                            fontWeight: 500,
+                          },
+                        })}
+                      />
+                    </div>
+                  </Tooltip>
+                </span>
               </Group>
             </Accordion.Panel>
           </Accordion.Item>
@@ -107,11 +155,31 @@ const PortfolioPage = ({ data }) => {
               ))}
             </Group>
           </span>
+          <span className='inside-filter'>
+            <span className='star-switch'>
+              <Tooltip label="My most relevant projects" withinPortal>
+                <div>
+                  <Switch
+                    color="indigo"
+                    labelPosition="left"
+                    label="Star projects"
+                    checked={starFilter}
+                    onChange={handleStarToggle}
+                    styles={(theme) => ({
+                      label: {
+                        fontWeight: 500,
+                      },
+                    })}
+                  />
+                </div>
+              </Tooltip>
+            </span>
+          </span>
         </div>
       )}
 
       <div className='all-nodes'>
-        {filteredProjects.map(node => (
+        {reorderedProjects.map(node => (
           <article key={node.id}>
             <div className='article-container'>
               <div className='title'>
