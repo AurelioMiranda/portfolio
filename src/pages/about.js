@@ -25,18 +25,18 @@ const AboutPage = () => {
 
         <Title color='rebeccapurple' size="45px">whoami</Title>
         <br />
-        <Title size="h3" className="text">&emsp;&emsp;I am a software developer specialized
+        <Text size="lg" className="text" mt="md">&emsp;&emsp;I am a software developer specialized
           in full-stack development, with a slight inclination towards front-end development.
           Currently, I am in the final year of my Masters's degree at <Link
             className="link" to="https://www.fct.unl.pt/">FCT Nova</Link>.
-        </Title>
+        </Text>
         <br />
-        <Title size="h3" className="text">
+        <Text size="lg" className="text" mt="md">
           &emsp;&emsp;Throughout
           my academic journey, I have acquired a strong grasp of software development principles,
           algorithms, data structures, and programming languages. Engaging in practical projects
           has sharpened my ability to design and implement scalable, efficient software solutions.
-        </Title>
+        </Text>
 
         <div className='spacing'></div>
 
@@ -44,26 +44,28 @@ const AboutPage = () => {
         <br />
         <div className='where-container'>
           <div className='text-container'>
-            <Title size="h3" className="text">&emsp;&emsp;I hail from Sesimbra, a charming town in Portugal <StaticImage
+            <Text size="lg" className="text" mt="md">&emsp;&emsp;I hail from Sesimbra, a charming town in Setúbal, Portugal <StaticImage
               alt="Pt"
               src="../images/pt.png"
               width="30"
               height="30"
-            />. Additionally, I work in the vibrant city of Lisbon and pursue my studies at Costa da Caparica.
-            </Title>
+            />, known for its beautiful sunsets and exhilarating carnival. Additionally, I work in the vibrant city of Lisbon and pursue 
+            my studies at Costa da Caparica.
+            </Text>
             <br />
-            <Title size="h3" className="text">
+            <br />
+            <Text size="lg" className="text" mt="md">
               &emsp;&emsp;These diverse
               locations have provided me with unique experiences and perspectives, allowing me to engage with the
               thriving tech industry while immersing myself in a rich academic environment.
-            </Title>
+            </Text>
           </div>
           <div className='image-caption-container'>
             <StaticImage
               alt="Sesimbra"
               src="../images/sesimbra.jpg"
-              width="450"
-              height="290"
+              width="400"
+              height="250"
             />
             <Text>
               Sesimbra, Portugal
@@ -75,9 +77,9 @@ const AboutPage = () => {
 
         <Title color='rebeccapurple' size="45px">Timeline</Title>
         <br />
-        <Title size="h3" className="text">
+        <Text size="lg" className="text" mt="md">
           &emsp;&emsp;This is a visual representation of my professional path so far.
-        </Title>
+        </Text>
         <br />
         <br />
         <div className='timeline-container'>

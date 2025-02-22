@@ -63,11 +63,11 @@ const IndexPage = () => {
 
         <Title color="rebeccapurple" size="45px">My Skills</Title>
         <br />
-        <Title size="h3" className="text">
+        <Text size="lg" className="text" mt="md">
           &emsp;&emsp;Over the course of my professional journey, I have diligently acquired
           and cultivated a diverse range of invaluable skills that have rendered me a proficient
           and accomplished software developer. Some of those skills are listed below. 👇
-        </Title>
+        </Text>
         <br />
         <div className="skills-section">
           <div className="skills-card">
