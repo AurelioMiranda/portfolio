@@ -40,7 +40,7 @@ const IndexPage = () => {
 
           <StaticImage
             alt="Personal picture"
-            src="../images/placeholder.png"
+            src="../images/picture.png"
             width="500"
             height="500"
             style={{ transform: 'scaleX(-1)', borderRadius: '50%' }}
