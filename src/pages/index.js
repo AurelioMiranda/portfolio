@@ -23,8 +23,7 @@ const IndexPage = () => {
               Full-Stack Developer
             </h1>
             <Text size="lg" color="dimmed">
-              Passionate about creating efficient, scalable, and visually appealing solutions
-              for the web and beyond.
+              Usually when I'm not working on a project I'm thinking about a new one.
             </Text>
             <Button
               component={Link}
@@ -55,8 +54,8 @@ const IndexPage = () => {
 
         <Title color='rebeccapurple' size="45px">Welcome!</Title>
         <Text size="lg" className="text" mt="md">
-          Welcome to my personal portfolio—a showcase of my journey as a Software Engineer. Here, you'll find
-          a curated collection of my projects, achievements, and skills that define my professional expertise.
+          Welcome to my personal portfolio: a showcase of my career as a Software Engineer. Here, you'll find
+          a collection of my projects, achievements, and skills that define my professional expertise.
         </Text>
 
         <div className='spacing'></div>
@@ -64,8 +63,8 @@ const IndexPage = () => {
         <Title color="rebeccapurple" size="45px">My Skills</Title>
         <br />
         <Text size="lg" className="text" mt="md">
-          &emsp;&emsp;Over the course of my professional journey, I have diligently acquired
-          and cultivated a diverse range of invaluable skills that have rendered me a proficient
+          &emsp;&emsp;Over the course of my professional journey, I have learned and
+          improved a diverse range of skills that have helped me be a more proficient
           and accomplished software developer. Some of those skills are listed below. 👇
         </Text>
         <br />

@@ -27,7 +27,7 @@ const NotFoundPage = () => {
           Oops! Page Not Found
         </Title>
         <Text size="lg" style={{ marginBottom: "1rem" }}>
-          Sorry, we couldn’t find the page you were looking for. But don’t worry,
+          I'm pretty sure I didn't code the page you are looking for. But don't worry,
           you can always head back to the homepage.
         </Text>
         <Button

@@ -14,7 +14,7 @@ const ContactMePage = () => {
       <Layout pageTitle="Aurélio Miranda">
         <div className="contact-header">
           <Title color="rebeccapurple" size="45px">Contact Me</Title>
-          <p className="contact-subtitle">I'd love to hear from you! Please fill out the form below to get in touch.</p>
+          <p className="contact-subtitle">I'd love to hear what you have to say! Please fill out the form below to get in touch.</p>
         </div>
 
         <br />
@@ -65,7 +65,7 @@ const ContactMePage = () => {
         </form>
 
         <div className="linkedin-cta">
-          <p>If you want a faster response, feel free to message me on <a href="https://www.linkedin.com/in/mirandex/" target="_blank" rel="noopener noreferrer">LinkedIn</a>!</p>
+          <p>If you want a faster response, message me on <a href="https://www.linkedin.com/in/mirandex/" target="_blank" rel="noopener noreferrer">LinkedIn</a>!</p>
         </div>
       </Layout>
     </main>

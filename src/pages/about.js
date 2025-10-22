@@ -33,9 +33,9 @@ const AboutPage = () => {
         <br />
         <Text size="lg" className="text" mt="md">
           &emsp;&emsp;Throughout
-          my academic journey, I have acquired a strong grasp of software development principles,
-          algorithms, data structures, and programming languages. Engaging in practical projects
-          has sharpened my ability to design and implement scalable, efficient software solutions.
+          my academic journey, I have acquired a strong notion of software development principles,
+          algorithms, data structures, and programming languages. Practical projects have helped me
+          sharpened my skills to design and implement diverse software solutions.
         </Text>
 
         <div className='spacing'></div>
@@ -44,20 +44,20 @@ const AboutPage = () => {
         <br />
         <div className='where-container'>
           <div className='text-container'>
-            <Text size="lg" className="text" mt="md">&emsp;&emsp;I hail from Sesimbra, a charming town in Setúbal, Portugal <StaticImage
+            <Text size="lg" className="text" mt="md">&emsp;&emsp;I'm from Sesimbra, a charming town in Setúbal, Portugal <StaticImage
               alt="Pt"
               src="../images/pt.png"
               width="30"
               height="30"
-            />, known for its beautiful sunsets and exhilarating carnival. Additionally, I work in the vibrant city of Lisbon and pursue 
+            />, known for its beautiful sunsets and exclusive carnival. Additionally, I (usually) work in the city of Lisbon and pursue 
             my studies at Costa da Caparica.
             </Text>
             <br />
             <br />
             <Text size="lg" className="text" mt="md">
               &emsp;&emsp;These diverse
-              locations have provided me with unique experiences and perspectives, allowing me to engage with the
-              thriving tech industry while immersing myself in a rich academic environment.
+              locations have provided me with unique experiences and perspectives on both personal life and professional 
+              which helped make the journey less troublesome and more rewarding.
             </Text>
           </div>
           <div className='image-caption-container'>
@@ -106,7 +106,7 @@ const AboutPage = () => {
               </Timeline.Item>
 
               <Timeline.Item title="&emsp;Polytechnic Institute of Setúbal">
-                <Text color="dimmed" size="sm">Throughout the past three years, I have dedicated myself to acquiring and refining
+                <Text color="dimmed" size="sm">In IPS I acquired and refined
                   a wide range of skills that have contributed to my current position. These skills include valuable soft skills
                   like resilience, work ethic, and patience, as well as technical skills such as coding, debugging, testing, and
                   project management, among others.</Text>
